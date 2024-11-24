@@ -117,3 +117,15 @@ Make sure all dependencies are properly installed before proceeding with the pac
     ```bash
     ros2 bag play <path_to_rosbag>
     ```
+
+
+## Demo Video
+
+Watch the demo video for this project:
+
+[![Walker ROS2 Demo](https://img.youtube.com/vi/0AE1pd3-MHU/0.jpg)](https://youtu.be/0AE1pd3-MHU)
+
+Click on the image above to view the video on YouTube.
+
+
+
