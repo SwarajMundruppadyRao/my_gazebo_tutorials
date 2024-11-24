@@ -1,6 +1,10 @@
 # Walker ROS2 Package for Obstacle Avoidance in Gazebo
 [![License: BSD-3-Clause](https://img.shields.io/badge/License-BSD--3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
+## Author 
+Swaraj Mundruppady Rao
+Email ID: swarajmr@umd.edu
+
 ## Overview
 
 This repository contains a ROS2 package called **walker** that implements a simple walker algorithm for a robot in the Gazebo simulation environment. The robot mimics the behavior of a Roomba vacuum cleaner by moving forward until it detects an obstacle, rotating in place until the path ahead is clear, and alternating between clockwise and counterclockwise rotations. The project leverages a state machine design pattern for modularity and scalability.
