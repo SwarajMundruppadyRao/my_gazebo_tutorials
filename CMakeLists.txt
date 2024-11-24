@@ -12,6 +12,38 @@ find_package(sensor_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 
+# Include directories
+include_directories(include)
+
+#Define the executable
+add_executable(walker_node src/walker_node.cpp)
+
+#Link the dependencies
+ament_target_dependencies(walker_node
+rclcpp
+sensor_msgs
+geometry_msgs
+nav_msgs
+)
+
+# Install the executable
+install(TARGETS
+  walker_node
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+# Install the header files
+install(DIRECTORY
+  include/
+  DESTINATION include
+)
+
+# Install launch files
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}
+)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights

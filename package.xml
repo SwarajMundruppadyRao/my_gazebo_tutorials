@@ -2,10 +2,12 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>walker</name>
-  <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="swarajmr@umd.edu">swaraj</maintainer>
-  <license>BSD-3-Clause</license>
+  <version>0.0.1</version>
+  <description>A ROS2 package implementing a walker robot using the State Design Pattern. The walker moves forward until an obstacle
+    is detected, then rotates until the path is clear.</description>
+  <maintainer email="swarajmr@umd.edu">Swaraj Mundruppady Rao</maintainer>
+  <author email="swarajmr@umd.edu">Swaraj Mundruppady Rao</author>
+  <license>MIT</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
@@ -14,8 +16,8 @@
   <depend>geometry_msgs</depend>
   <depend>nav_msgs</depend>
 
-  <test_depend>ament_lint_auto</test_depend>
-  <test_depend>ament_lint_common</test_depend>
+  <depend>ament_lint_auto</depend>
+  <depend>ament_lint_common</depend>
 
   <export>
     <build_type>ament_cmake</build_type>
